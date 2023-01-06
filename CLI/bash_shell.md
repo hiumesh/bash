@@ -71,5 +71,32 @@ EXECUTION SEQUENCE: ls -> date -> who <br>
 | **!!**                  | References the previous command                             |
 | **!** characters        | References an event beginning with the specified characters |
 | **! ?** pattern **?**   | References an event containing the specified pattern        |
-| **! -** event num        | References an event with an offset from the first event     |
+| **! -** event num       | References an event with an offset from the first event     |
 | **!** num-num           | References a range of events                                |
+
+## Shell Functions/Operators used with commands
+
+| Command               | Execution         |
+| :-------------------- | :---------------- |
+| **\`** command **\`** | Execute a command |
+| **$(** command **)**  | Execute a command |
+
+| Special Characters<br>for Filename Expansion | Execution                                                       |
+| :------------------------------------------- | :-------------------------------------------------------------- |
+| **\***                                       | Match on any set of characters                                  |
+| **?**                                        | Match on any single characters                                  |
+| **[ ]**                                      | Match on a class of possible characters                         |
+| **\\**                                       | Ouote the following character. Used to quote special characters |
+
+| Redirection              | Execution                                                                                                                           |
+| :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| command **>** filename   | Redirect the standard output to a file or device, creating the file if it does not exist and overwriting the file if it does exist. |
+| command **<** filename   | Redirect the standard input from a file or device to a program                                                                      |
+| command **>>** filename  | Redirect the standard output to a file or device, appending the output to the end of the file                                       |
+| command **2>** filename  | Redirect the standard error to a file                                                                                               |
+| command **2>>** filename | Redirect and append the standard error to a file                                                                                    |
+| command **2>&1**         | Redirct the standard error to the standard output                                                                                   |
+
+| Pipes      | Execution  |
+| :--------- | :--------- |
+| command ** | ** command | Pipe the standard output of one command as input for another command |

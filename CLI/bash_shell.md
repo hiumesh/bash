@@ -51,7 +51,7 @@ EXECUTION SEQUENCE: ls -> date -> who <br>
 | TAB TAB or ESC         | List possible completions                          |
 | ALT-/, CTRL-R-/        | Filename completion, normal text for automatic     |
 | ALT-$, CTRL-R-$        | Shell variable completion $ for automatic          |
-| ALT-~, CTRL-R-~        | Username completion, ~ for automatic               |
+| ALT-\~, CTRL-R-\~        | Username completion, ~ for automatic               |
 | ALT-@, CTRL-R-@        | Host name completion, @ for automatic              |
 | ALT-!, CTRL-R-!        | Command name completion, normal text for automatic |
 
@@ -99,4 +99,4 @@ EXECUTION SEQUENCE: ls -> date -> who <br>
 
 | Pipes      | Execution  |
 | :--------- | :--------- |
-| command ** | ** command | Pipe the standard output of one command as input for another command |
+| command ** \| ** command | Pipe the standard output of one command as input for another command |
